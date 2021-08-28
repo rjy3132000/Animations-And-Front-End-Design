@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:url('./img/Taj Mahal.jpg'), linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.1));
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    background:rgba(0,0,0,.3);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    outline:1px solid black ;
+}
+nav .logo{
+    width: 25%;
+    text-align: center;
+}
+nav .menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+nav .menu a{
+    width: 25%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav .menu a:first-child{
+    color: #00b894;
+}
+main{
+    width: 100%;
+    height: 85vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+section h3{
+    font-size: 35px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 1px black;
+}
+section h1{
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 650;
+    text-shadow: 2px 2px 1px black;
+    text-transform: uppercase;
+}
+section p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 1px black;
+}
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+section .btnone{
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+}
+.btnone:hover{
+    background: #00b894;
+    color: #fff;
+    border-radius: 10px;
+}
+section .btntwo{
+    background: #00b894;
+    color: #fff;
+    border-radius: 10px;
+}
+.btntwo:hover{
+    background: #fff;
+    color: #000; 
+    border-radius: 10px;
+}
+.content::after{
+    content: '';
+    animation: changetext 15s infinite linear;
+    color: #00b894;
+}
+@keyframes changetext{
+    0%{content:"MumBai";}
+    10%{content:"Chennai";}
+    20%{content:"Kolkata";}
+    30%{content:"Delhi";}
+    40%{content:"Indore";}
+    50%{content:"Bhopal";}
+    60%{content:"Kerala";}
+    70%{content:"Jaipur(Pink City)";}
+    80%{content:"Surat";}
+    90%{content:"Banglore";}
+    100%{content:"Cambaitore";}
+    
+}
